@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Strat3gy</title>
+    <title>Strat3gy</title>
+    <link rel="stylesheet" type="text/css" href="/css/core.css">
 </head>
+
 <body>
 
-<h1>This is the index page</h1>
+<header>
+<h1>
+    <a href ="/">Strat3gy</a>
+</h1>
+<hr>
+</header>
+
+<!-- Navigation bar with links to different parts-->
+<nav>
+    <a class="btn" href="help.html">Help</a>
+    <a class="btn" href="about.html">About</a>
+    <a class="btn" href="search.html">Search</a>
+    <a class="btn" href="upload.html">Add game</a>
+    <a class="btn" href="login.html">Login/Profile</a>
+    <a class="btn" href="register.html">Register/Logout</a>
+</nav>
+
+<section>
+    <table class="game_table">
+        <thead style="text-align: center;">
+            <tr>
+                <th>Game</th>
+                <th>Developer</th>
+                <th>Date</th>
+                <th>Platform</th>
+                <th>Average rating</th>
+                <th>Votes</th>
+            </tr>
+        </thead>
+
+        <!--when add php, add inside tbody so a table is made and auto update-->
+        <tbody>
+            <tr>
+               <td>Total war: Rome II</td> 
+               <td>The Creative Assembly</td>
+               <td>3 September 2013</td>
+               <td>Windows/Mac</td>
+               <td></td>
+               <td>19</td>
+            </tr>
+            <tr>
+                <td>Crusader Kings II</td>
+                <td>Paradox Development Studio</td>
+                <td>February 14, 2012</td>
+                <td>Windows/Mac/Linux</td>
+                <td></td>
+                <td>69</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
 
 </body>
+
+
+<footer>
+
+</footer>
+
 </html> 
+
+<!--
+    TO DO LIST LATER:
+    **right now the link of login/profile: login.html**
+    **right now the link of register/logout: logout.html**
+    -function when you login -> replace Profile with Login
+    -function when you login -> replace Register with Logout
+    -will need cookie and session !
+-->

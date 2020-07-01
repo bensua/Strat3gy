@@ -1,11 +1,11 @@
 -------TO DO LIST------
 *29/06 - 30/06*
--Basic Degisn --> Ke + Minh
+-Basic Design --> Ke + Minh *DONE*
 -Final Design --> Ke + Minh
 *30/06 - 31/06* 
 https://medium.com/@nmayurashok/file-and-folder-structure-for-web-development-8c5c83810a5#:~:text=The%20Folder%20Structure,web%20pages%20of%20the%20project.&text=The%20common%20folder%20we%20can,the%20main%20pages%20with%20JavaScript.
 -Create folder --> Ke 
--Code skeleton html + css(if possible)
+-Code skeleton html + css(if possible) --> Read discussion for updates on design
 
 ******NOTES*******
 -Should use hashmap or dictionary to store and find things easier

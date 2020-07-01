@@ -1,0 +1,55 @@
+/* body is full gray*/
+body{
+    background-color: #333333;
+    color: #b3b3b3;
+    scroll-behavior: smooth;
+}
+
+/*the site biggest heading*/
+h1{
+    text-align: center;
+}
+
+/*navigation bar */
+nav{
+    background-color:#404040;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin:auto;
+}
+nav.a{
+    display: inline-block;
+}
+
+/*aside bar*/
+aside{
+    float:right;
+    background-color: lightgray;
+}
+
+/*general decorations for links*/
+a{
+    text-decoration: none;
+    color:gray;
+    padding:10px;
+}
+
+/*Button*/
+.btn:hover{
+    color:red;
+}
+
+/*Game table */
+.game_table{
+    margin: auto;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-collapse:collapse;
+    text-align: center;
+}
+
+th,td{
+    border: 1px solid lightgray;
+    padding: 10px;
+}
