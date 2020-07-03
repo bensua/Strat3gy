@@ -2,32 +2,44 @@
 <html>
 
 <head>
-<title>Strat3gy:Search</title>
-<link rel="stylesheet" type="text/css" href="/css/core.css">
+    <title>Strat3gy:Search</title>
+    <link rel="stylesheet" type="text/css" href="/css/core.css">
 </head>
 
 <body>
-<header>
-<h1>
-    <a href ="/">Strat3gy</a>
-</h1>
-<hr>
-</header>
+    <header>
+    <h1>
+        <a href ="/">Strat3gy</a>
+    </h1>
+    <hr>
+    </header>
 
-<nav>
-    <a class="btn" href="help.html">Help</a>
-    <a class="btn" href="search.html">Search</a>
-    <!--Change these down here when append session and cookies and php-->
-    <a class="btn" href="login.html">Login/Profile</a>
-    <a class="btn" href="register.html">Register/Logout</a>
-</nav>
+    <nav>
+        <a class="btn" href="faqs.html">FAQs</a>
+        <a class="btn" href="about.html">About us</a>
+        <!--Change these down here when append session and cookies and php-->
+        <a class="btn" href="login.html">Login/Profile</a>
+        <a class="btn" href="register.html">Register/Logout</a>
+    </nav>
 
-<section>
     <h2>Search</h2>
-</section>
+    <section class="frm">
+        <form>
+            <label for="gname">Game Name</label>
+            <input type="text" id="gname" name="gamename" placeholder="Game Name">
+            <br>
+            <label for="dname">Developer Name</label>
+            <input type="text" id="dname" name="gamedev" placeholder="Developer Name">
+            <label for="year">Year Publish</label>
+            <input type="number" id="year" name="yearpublish" placeholder="" min=0>
+            <br>
+            <button class="btn frmBtn"type="submit" value="Search">Search</button>
+        </form>
+    </section>
 
-<footer>
-    <p class="text_bottom" >made with the love of strategy games by Ke Duong </p>
-</footer>
+    <footer>
+        <p class="text_bottom" >made with the love of strategy games by<a class="btn" href="#">Ke Duong</a>and<a class="btn" href="#">Minh Bui</a></p>
+    </footer>
+
 </body>
 </html> 

@@ -15,20 +15,38 @@
 </header>
 <!--Navigation bar-->
 <nav>
-    <a class="btn" href="help.html">Help</a>
+    <a class="btn" href="faqs.html">FAQs</a>
+    <a class="btn" href="about.html">About us</a>
     <a class="btn" href="search.html">Search</a>
     <!--Change these down here when append session and cookies and php-->
     <a class="btn" href="login.html">Login/Profile</a>
     <a class="btn" href="register.html">Register/Logout</a>
 </nav>
 
+<!--Testing purpose click to go to profile-->
+<a class="btn" href="profile.html">Click to go to profile--testing</a>
+
+
 <!--Login form-->
-<section>
-    <h2>Login</h2>
+<h2>Login</h2>
+<section class="frm">
+    <form>
+        <label for="uname">Username</label>
+        <input type="text" id="uname" name="username" placeholder="Username" required>
+        <br>
+        <label for="pwd">Password</label>
+        <input style="margin-left: 3.4px;"type="text" id="pwd" name="password" placeholder="Password" required>
+        <br>
+        <button class="btn frmBtn"type="submit" value="Login"> Login</button>
+    </form>
+    <!--Havent designed these yet-->
+    <a  class="btn" href="register.html">New Account</a>
+    <a  class="btn" href="reset.html">Forget your password?</a>
 </section>
 
 <footer>
-    <p class="text_bottom" >made with the love of strategy games by Ke Duong </p>
+    <p class="text_bottom" >made with the love of strategy games by<a class="btn" href="#">Ke Duong</a>and<a class="btn" href="#">Minh Bui</a></p>
 </footer>
+
 </body>
 </html> 
