@@ -27,11 +27,6 @@ nav.a{
     display: inline-block;
 }
 
-/*Container*/
-.container{
-    text-align: center;
-}
-
 /*general decorations for links*/
 a{
     text-decoration: none;
@@ -60,48 +55,8 @@ th,td{
 
 /*Login form */
 
-div.form{
-    margin-top: 20px;
-    display: inline-block;
-    border: 1px solid gray;
-    padding:10px;
-    text-align: center;
-    scale: 1.2;
-}
-.same_line{
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.text_input{
-    width: 100px;
-    float: left;
-}
-
-.input_box{
-    float: right;
-    margin-left: 10px;
-    width: 150px;
-    padding:5px;
-    margin-bottom: 10px;
-}
-
-.input_dropdown{
-    float:right;
-    margin-left: 10px;
-    width: 160px;
-    font-size: 10px;
-    padding: 7px;
-}
-
-.submitBtn{
-    float: right;
-    margin-top: 10px;
-}
 
 /*Footer*/
 .text_bottom{
-    display: block;
-    position: relative;
     text-align: center;
 }
