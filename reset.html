@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Strat3gy:Reset</title>
-<link rel="stylesheet" type="text/css" href="/css/core.css">
+    <title>Strat3gy</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="js/test.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>
-            <a href ="/">Strat3gy</a>
-        </h1>
-        <hr>
-    </header>
 
-    <nav>
-        <a class="btn" href="faqs.html">FAQs</a>
-        <a class="btn" href="about.html">About us</a>
-        <a class="btn" href="search.html">Search</a>
-        <!--Change these down here when append session and cookies and php-->
-        <a class="btn" href="login.html">Login/Profile</a>
-        <a class="btn" href="register.html">Register/Logout</a>
-    </nav>
+    <ul>
+        <li><a class="NAV_A" href="index.html">Strat3gy</a></li>
+        <li><a class="NAV_A" href="faqs.html">FAQs</a></li>
+        <li><a class="NAV_A" href="about.html">About</a></li>
+        <li><a class="NAV_A" href="search.html">Search</a></li>
+        <li><a class="NAV_A" href="upload.html">Add game</a></li>
+        <li style="float:right">
+            <a class="NAV_A" href="register.html">Register</a>
+        </li>
+        <li style="float:right">
+            <a class="NAV_A" href="login.html">Login</a>
+        </li>
+    </ul>
 
-    <section>
-        <h2>Reset password</h2>
-    </section>
-    
+    <div style="padding:20px;margin-top:30px;height:1500px;">
+        <h1>Hello DMM</h1>
+        <h2>Reset Password</h2>
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="gmail"><b>Gmail</b></label>
+                <input type="text" placeholder="Enter Gmail" name="gmail" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required id="psw">
+                <label for="newpsw"><b>New Password</b></label>
+                <input type="password" placeholder="Enter New Password" name="newpsw" required id="newpsw">
+                <label for="newrepsw"><b>ReEnter New Password</b></label>
+                <input type="password" placeholder="ReEnter New Password" name="newrepsw" required id="newrepsw">
+                <label>
+                    <input type="checkbox" name="showpassword" id="CheckShowPassword" onclick="Myfunction()"> Show password
+                </label>
+                <button type="submit">Reset Password</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+
+    </div>
     <footer>
-        <p class="text_bottom" >made with the love of strategy games by<a class="btn" href="#">Ke Duong</a>and<a class="btn" href="#">Minh Bui</a></p>
+        <p class="text_bottom">made with the love of strategy games by<a class="btn" href="#"> Ke Duong </a>and<a class="btn" href="#"> Minh Bui</a></p>
     </footer>
+    <script>
+        function Myfunction() {
+            var psw = new Array("psw", "newpsw", "newrepsw");
+            ShowPassword2(psw);
+        }
+        
+    </script>
 </body>
-
 </html>

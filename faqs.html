@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Strat3gy:FAQs</title>
-    <link rel="stylesheet" type="text/css" href="/css/core.css">
+    <title>Strat3gy</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="js/test.js"></script>
+    <style>
+
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>
-            <a href ="/">Strat3gy</a>
-        </h1>
-        <hr>
-    </header>
 
-    <nav>
-        <a class="btn" href="about.html">About us</a>
-        <a class="btn" href="search.html">Search</a>
-        <!--Change these down here when append session and cookies and php-->
-        <a class="btn" href="login.html">Login/Profile</a>
-        <a class="btn" href="register.html">Register/Logout</a>
-    </nav>
+    <ul>
+        <li><a class="NAV_A" href="index.html">Strat3gy</a></li>
+        <li><a class="NAV_A" href="faqs.html">FAQs</a></li>
+        <li><a class="NAV_A" href="about.html">About</a></li>
+        <li><a class="NAV_A" href="search.html">Search</a></li>
+        <li><a class="NAV_A" href="upload.html">Add game</a></li>
+        <li style="float:right">
+            <a class="NAV_A" href="register.html">Register</a>
+        </li>
+        <li style="float:right">
+            <a class="NAV_A" href="login.html">Login</a>
+        </li>
+    </ul>
 
-    <section><h2>FAQs</h2>
+    <div style="padding:20px;margin-top:30px;height:1500px;">
+        <h1>Hello DMM</h1>
+        <h2>FAQs</h2>
         <article>
             <h3>Contacts</h3>
             <p>Contact email: </p>
         </article>
         <hr>
-        <article>
-            <h3>How can I upload not-listed games?</h3>
-            <p>First you need to <a class="btn" href="login.html">Login</a> or <a class="btn" href="register.html">Register</a>
-            then go to <a class="btn" href="upload.html">Upload</a></p>
-            <p>There are two ways: manually or using links(steam is the only one available now).</p>
-        </article>
-        <hr>
-        <article>
-            <h3>Forget your password?</h3>
-            <p>Go to<a class="btn" href="reset.html">Reset password</a></p>
-        </article>
-    </section>
 
+        <div id="TogglePannel">
+            <button class="accordion">How can I upload not-listed games?</button>
+            <div class="panel">
+                <p>
+                    - First you need to <a class="btn" href="login.html">Login</a> or <a class="btn" href="register.html">Register</a>
+                    then go to <a class="btn" href="upload.html">Upload</a>
+                </p>
+                <p>- There are two ways: manually or using links(steam is the only one available now).</p>
+            </div>
+        </div>
+        <div id="TogglePannel">
+            <button class="accordion">Forget your password?</button>
+            <div class="panel">
+                <p>- Go to<a class="btn" href="reset.html"> Reset password</a></p>
+            </div>
+        </div>
+        <br />
+        <div>DMM</div>
+
+    </div>
     <footer>
-        <p class="text_bottom" >made with the love of strategy games by<a class="btn" href="#">Ke Duong</a>and<a class="btn" href="#">Minh Bui</a></p>
+        <p class="text_bottom">made with the love of strategy games by<a class="btn" href="#"> Ke Duong </a>and<a class="btn" href="#"> Minh Bui</a></p>
     </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
-</html> 
+</html>
