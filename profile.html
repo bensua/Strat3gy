@@ -25,6 +25,30 @@
 
 <section>
     <h2>Profile</h2>
+    <div class="frm">
+        <form>
+            <label for="dname">Display</label>
+            <input type="text" id="dname" name="DisplayName" placeholder="Put name in here">
+
+            <label for="uploads">Uploads</label>
+            <textarea class="text_container"></textarea>
+
+            <label for="pwd">Old Password</label>
+            <input type="password" id="pwd" name="password" placeholder="Old Password">
+            <label for="npass">New Password</label>
+            <input type="password" id="npass" name="NewPassword" placeholder="New Password">
+            
+            <button class="btn frmBtn" type="submit" value="Change" > Save Changes</button>
+        </form>
+        <!--Haven't designed these yet-->
+        <a  class="btn" href="register.html">New Account</a>
+        <a  class="btn" href="reset.html">Forget your password?</a>
+    </div>
+    
+    <div class="danger_container">
+        <h3 style="color: black;">Warning !!! Danger zone </h3>
+        <button class="btn frmBtn" type="button">Delete</button>
+    </div>
 </section>
 
 <footer>

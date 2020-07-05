@@ -1,4 +1,14 @@
-/*Main parts of the site*/
+/*Least relevant!!!*/
+/*Making the input only gettin year*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
 
 /* body is full gray*/
 body{
@@ -63,7 +73,7 @@ th,td{
 }
 
 /*Login form */
-input[type=text],select,input[type=number],input[type="password"]{
+input[type=text],select,input[type=number],input[type="password"],input[type="date"],textarea{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border-radius: 4px; /* Rounded borders */
@@ -73,10 +83,23 @@ input[type=text],select,input[type=number],input[type="password"]{
     resize: horizontal;
 }
 
+form.text_form{
+    text-align: left;
+}
+
 .frmBtn{
     margin:auto;
     padding: 10px;
     margin-bottom: 10px;
+    width:100px;
+}
+
+/*Container*/
+div.danger_container{
+    text-align: center;
+    background-color: red;
+    width: 50%;
+    margin: auto;
 }
 
 /*Article*/
@@ -86,6 +109,7 @@ article{
 h3{
     color: whitesmoke;
 }
+/*Footer*/
 footer{
     text-align: center;
 }

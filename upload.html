@@ -25,6 +25,31 @@
 
     <section>
         <h2>Upload</h2>
+        <section class="frm">
+            <form>
+                <label for="gname">Game Name</label>
+                <input type="text" id="gname" name="GameName" placeholder="Game Name">
+
+                <label for="dname">Developer Name</label>
+                <input type="text" id="dname" name="GameDev" placeholder="Developer Name">
+
+                <label for="date">Date publish</label>
+                <input type="date" id="date" name="DatePublish">
+
+                <label for="platform">Platform</label>
+                <input type="text" id="platform" name="DamePlatform" placeholder="Windows/Mac/Linux">
+
+                <label for="averate">Average Rating</label>
+                <input type="number" id="averate" name="AverageRating" step="0.01" min="0" max="5" placeholder="1.0">
+
+                <label for="gimage">Image:</label>
+                <input type="file" id="gimage" name="GameImage">
+                <br>
+                <br>
+                <button class="btn frmBtn"type="submit" value="Upload">Upload</button>
+                
+            </form>
+        </section>
     </section>
 
     <footer>
