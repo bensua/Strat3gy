@@ -1,107 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Strat3gy</title>
-    <link rel="stylesheet" href="css/test.css">
-    <script src="js/test.js"></script>
+<title>Strat3gy:Profile</title>
+<link rel="stylesheet" type="text/css" href="/css/core.css">
 </head>
+
 <body>
+<header>
+<h1>
+    <a href ="/">Strat3gy</a>
+</h1>
+<hr>
+</header>
 
-    <ul>
-        <li><a class="NAV_A" href="index.html">Strat3gy</a></li>
-        <li><a class="NAV_A" href="faqs.html">FAQs</a></li>
-        <li><a class="NAV_A" href="about.html">About</a></li>
-        <li><a class="NAV_A" href="search.html">Search</a></li>
-        <li><a class="NAV_A" href="upload.html">Add game</a></li>
-        <li style="float:right">
-            <a class="NAV_A" href="register.html">Register</a>
-        </li>
-        <li style="float:right">
-            <a class="NAV_A" href="login.html">Login</a>
-        </li>
-    </ul>
+<nav>
+    <a class="btn" href="faqs.html">FAQs</a>
+    <a class="btn" href="about.html">About us</a>
+    <a class="btn" href="search.html">Search</a>
+    <!--Change these down here when append session and cookies and php-->
+    <a class="btn" href="login.html">Login/Profile</a>
+    <a class="btn" href="register.html">Register/Logout</a>
+</nav>
 
-    <div style="padding:20px;margin-top:30px;height:1500px;">
-        <h1>Hello DMM</h1>
-        <table id="customers">
-            <tr>
-                <th>Game</th>
-                <th>Developer</th>
-                <th>Date</th>
-                <th>Platform</th>
-                <th>Average rating</th>
-                <th>Votes</th>
-            </tr>
-            <tr>
-                <td>Total war: Rome II</td>
-                <td>The Creative Assembly</td>
-                <td>3 September 2013</td>
-                <td>Windows/Mac</td>
-                <td></td>
-                <td>19</td>
-            </tr>
-            <tr>
-                <td>Crusader Kings II</td>
-                <td>Paradox Development Studio</td>
-                <td>February 14, 2012</td>
-                <td>Windows/Mac/Linux</td>
-                <td></td>
-                <td>69</td>
-            </tr>
-        </table>
+<section>
+    <h2>Profile</h2>
+</section>
 
-        <form action="action_page.php" method="post">
-            <div class="imgcontainer">
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
+<footer>
+    <p class="text_bottom" >made with the love of strategy games by<a class="btn" href="#">Ke Duong</a>and<a class="btn" href="#">Minh Bui</a></p>
+</footer>
 
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
-
-        <form action="action_page.php" method="post">
-            <div class="imgcontainer">
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
-
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-                <label for="gmail"><b>Gmail</b></label>
-                <input type="text" placeholder="Enter Gmail" name="gmail" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required id="psw">
-                <label for="repsw"><b>ReEnter Password</b></label>
-                <input type="password" placeholder="ReEnter Password" name="repsw" required id="repsw">
-                <label>
-                    <input type="checkbox" name="showpassword" id="CheckShowPassword" onclick="ShowPassword()"> Show password
-                </label>
-                <button type="submit">Register</button>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancel</button>
-            </div>
-        </form>
-
-    </div>
-    <footer>
-        <p class="text_bottom">made with the love of strategy games by<a class="btn" href="#"> Ke Duong </a>and<a class="btn" href="#"> Minh Bui</a></p>
-    </footer>
 </body>
-</html>
+</html> 

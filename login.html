@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Strat3gy</title>
-    <link rel="stylesheet" href="css/test.css">
-    <script src="js/test.js"></script>
+<title>Strat3gy:Login</title>
+<link rel="stylesheet" type="text/css" href="/css/core.css">
 </head>
+
 <body>
+<header>
+<h1>
+    <a href ="/">Strat3gy</a>
+</h1>
+<hr>
+</header>
+<!--Navigation bar-->
+<nav>
+    <a class="btn" href="faqs.html">FAQs</a>
+    <a class="btn" href="about.html">About us</a>
+    <a class="btn" href="search.html">Search</a>
+    <!--Change these down here when append session and cookies and php-->
+    <a class="btn" href="login.html">Login/Profile</a>
+    <a class="btn" href="register.html">Register/Logout</a>
+</nav>
 
-    <ul>
-        <li><a class="NAV_A" href="index.html">Strat3gy</a></li>
-        <li><a class="NAV_A" href="faqs.html">FAQs</a></li>
-        <li><a class="NAV_A" href="about.html">About</a></li>
-        <li><a class="NAV_A" href="search.html">Search</a></li>
-        <li><a class="NAV_A" href="upload.html">Add game</a></li>
-        <li style="float:right">
-            <a class="NAV_A" href="register.html">Register</a>
-        </li>
-        <li style="float:right">
-            <a class="NAV_A" href="login.html">Login</a>
-        </li>
-    </ul>
+<!--Testing purpose click to go to profile-->
+<a class="btn" href="profile.html">Click to go to profile--testing</a>
 
-    <div style="padding:20px;margin-top:30px;height:1500px;">
-        <h1>Hello DMM</h1>
 
-        <form action="action_page.php" method="post">
-            <div class="imgcontainer">
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
+<!--Login form-->
+<h2>Login</h2>
+<section class="frm">
+    <form>
+        <label for="uname">Username</label>
+        <input type="text" id="uname" name="username" placeholder="Username" required>
+        <br>
+        <label for="pwd">Password</label>
+        <input style="margin-left: 3.4px;"type="text" id="pwd" name="password" placeholder="Password" required>
+        <br>
+        <button class="btn frmBtn"type="submit" value="Login"> Login</button>
+    </form>
+    <!--Havent designed these yet-->
+    <a  class="btn" href="register.html">New Account</a>
+    <a  class="btn" href="reset.html">Forget your password?</a>
+</section>
 
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+<footer>
+    <p class="text_bottom" >made with the love of strategy games by<a class="btn" href="#">Ke Duong</a>and<a class="btn" href="#">Minh Bui</a></p>
+</footer>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
-    </div>
-    <footer>
-        <p class="text_bottom">made with the love of strategy games by<a class="btn" href="#"> Ke Duong </a>and<a class="btn" href="#"> Minh Bui</a></p>
-    </footer>
 </body>
-</html>
+</html> 
