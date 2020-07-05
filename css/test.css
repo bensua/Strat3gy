@@ -25,9 +25,9 @@ li {
     text-decoration: none;
 }
 
-    .NAV_A:hover:not(.active) {
-        background-color: #111;
-    }
+.NAV_A:hover:not(.active) {
+    background-color: #111;
+}
 
 .active {
     background-color: #4CAF50;
@@ -59,10 +59,10 @@ button {
     width: 100%;
 }
 
-    /* Add a hover effect for buttons */
-    button:hover {
-        opacity: 0.8;
-    }
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
 
 /* Extra style for the cancel button (red) */
 .cancelbtn {
