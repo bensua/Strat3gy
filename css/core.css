@@ -1,12 +1,13 @@
+/*Main parts of the site*/
+
 /* body is full gray*/
 body{
     background-color: #333333;
     color: #b3b3b3;
     scroll-behavior: smooth;
 }
-
-/*Section*/
-section.frm{
+/*FORM*/
+.frm{
     margin: auto;
     padding: 20px;
     width: 300px;
@@ -62,7 +63,7 @@ th,td{
 }
 
 /*Login form */
-input[type=text],select,input[type=number]{
+input[type=text],select,input[type=number],input[type="password"]{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border-radius: 4px; /* Rounded borders */
@@ -73,8 +74,9 @@ input[type=text],select,input[type=number]{
 }
 
 .frmBtn{
-    margin: auto;
+    margin:auto;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 /*Article*/
@@ -84,8 +86,6 @@ article{
 h3{
     color: whitesmoke;
 }
-
-/*Footer*/
-.text_bottom{
+footer{
     text-align: center;
 }
