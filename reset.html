@@ -23,7 +23,7 @@
 
     <div style="padding:20px;margin-top:30px;height:1500px;">
         <h1>Hello DMM</h1>
-
+        <h2>Reset Password</h2>
         <form action="action_page.php" method="post">
             <div class="imgcontainer">
                 <img src="img_avatar2.png" alt="Avatar" class="avatar">
@@ -32,24 +32,35 @@
             <div class="container">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
-
+                <label for="gmail"><b>Gmail</b></label>
+                <input type="text" placeholder="Enter Gmail" name="gmail" required>
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
+                <input type="password" placeholder="Enter Password" name="psw" required id="psw">
+                <label for="newpsw"><b>New Password</b></label>
+                <input type="password" placeholder="Enter New Password" name="newpsw" required id="newpsw">
+                <label for="newrepsw"><b>ReEnter New Password</b></label>
+                <input type="password" placeholder="ReEnter New Password" name="newrepsw" required id="newrepsw">
                 <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <input type="checkbox" name="showpassword" id="CheckShowPassword" onclick="Myfunction()"> Show password
                 </label>
+                <button type="submit">Reset Password</button>
             </div>
 
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
         </form>
+
     </div>
     <footer>
         <p class="text_bottom">made with the love of strategy games by<a class="btn" href="#"> Ke Duong </a>and<a class="btn" href="#"> Minh Bui</a></p>
     </footer>
+    <script>
+        function Myfunction() {
+            var psw = new Array("psw", "newpsw", "newrepsw");
+            ShowPassword2(psw);
+        }
+        
+    </script>
 </body>
 </html>

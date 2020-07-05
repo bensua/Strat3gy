@@ -1,92 +1,63 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Strat3gy:Register</title>
-<link rel="stylesheet" type="text/css" href="/css/core.css">
+    <title>Strat3gy</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="js/test.js"></script>
 </head>
-
 <body>
-<header>
-<h1>
-    <a href ="/">Strat3gy</a>
-</h1>
-<hr>
-</header>
 
-<nav>
-    <a class="btn" href="help.html">Help</a>
-    <a class="btn" href="search.html">Search</a>
-    <!--Change these down here when append session and cookies and php-->
-    <a class="btn" href="login.html">Login/Profile</a>
-    <a class="btn" href="register.html">Register/Logout</a>
-</nav>
+    <ul>
+        <li><a class="NAV_A" href="index.html">Strat3gy</a></li>
+        <li><a class="NAV_A" href="faqs.html">FAQs</a></li>
+        <li><a class="NAV_A" href="about.html">About</a></li>
+        <li><a class="NAV_A" href="search.html">Search</a></li>
+        <li><a class="NAV_A" href="upload.html">Add game</a></li>
+        <li style="float:right">
+            <a class="NAV_A" href="register.html">Register</a>
+        </li>
+        <li style="float:right">
+            <a class="NAV_A" href="login.html">Login</a>
+        </li>
+    </ul>
 
-<!--Login form-->
-<section style="text-align: center;">
-    <h2>Register</h2>
-    <div class="container">
-    <div class="form">
-    <form>
-        <div class="same_line">
-            <label class="text_input" for="username">Username:</label>
-            <input class="input_box" name="username" type="text">
-        </div>
-        <br>
-        
-        <div class="same_line">
-            <label class="text_input" for="password">Password:</label>
-            <input class="input_box" name="password" type="text">
-        </div>
-        <br>
+    <div style="padding:20px;margin-top:30px;height:1500px;">
+        <h1>Hello DMM</h1>
 
-        <div class="same_line">
-            <label class="text_input"for="verify_password">Verify Password:</label>
-            <input class="input_box" name="verify_password"type="text">
-        </div>
-        <br>
-        <!--Security Question 1-->
-        <div class="same_line">
-            <label class="text_input">Text:</label>
-            <select class="input_dropdown">
-                <option value="FavGame">Favorite Game</option>
-                <option value="FavFaction">Favorite Faction</option>
-                <option value="FavTimeline">Favorite Timeline</option>
-            </select>
-        </div>
-        <br>
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
 
-        <div class="same_line">
-            <label class="text_input">Text:</label>
-            <input class="input_box" type="text">
-        </div>
-        <br>
-        <!--Security Question 2-->
-        <div class="same_line">
-            <label class="text_input">Text:</label>
-            <select class="input_dropdown">
-                <option value="FavGame">Favorite Game</option>
-                <option value="FavFaction">Favorite Faction</option>
-                <option value="FavTimeline">Favorite Timeline</option>
-            </select>
-        </div>
-        <br>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="gmail"><b>Gmail</b></label>
+                <input type="text" placeholder="Enter Gmail" name="gmail" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required id="psw">
+                <label for="repsw"><b>ReEnter Password</b></label>
+                <input type="password" placeholder="ReEnter Password" name="repsw" required id="repsw">
+                <label>
+                    <input type="checkbox" name="showpassword" id="CheckShowPassword" onclick="Myfunction()"> Show password
+                </label>
+                <button type="submit">Register</button>
+            </div>
 
-        <div class="same_line">
-            <label class="text_input">Text:</label>
-            <input class="input_box" type="text">
-        </div>
-        <br>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
 
-        <br>
-        <button type="submit" class="btn">Register</button>
-    </form>
     </div>
-    </div>
-</section>
-
-<footer>
-    <p class="text_bottom" >made with the love of strategy games by Ke Duong </p>
-</footer>
+    <footer>
+        <p class="text_bottom">made with the love of strategy games by<a class="btn" href="#"> Ke Duong </a>and<a class="btn" href="#"> Minh Bui</a></p>
+    </footer>
+    <script>
+        function Myfunction() {
+            var psw = new Array("psw", "repsw");
+            ShowPassword2(psw);
+        }
+    </script>
 </body>
-</html> 
+</html>
