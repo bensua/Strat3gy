@@ -16,13 +16,6 @@ body{
     color: #b3b3b3;
     scroll-behavior: smooth;
 }
-/*FORM*/
-.frm{
-    margin: auto;
-    padding: 20px;
-    width: 300px;
-    border: 1px solid white;
-}
 /*the site heading*/
 h1{
     text-align: center;
@@ -31,6 +24,10 @@ h1{
 h2{
     font-size:30px;
     text-align: left;
+}
+
+h3{
+    color: whitesmoke;
 }
 
 /*navigation bar */
@@ -72,7 +69,13 @@ th,td{
     padding: 10px;
 }
 
-/*Login form */
+/*Form*/
+.frm{
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid white;
+}
 input[type=text],select,input[type=number],input[type="password"],input[type="date"],textarea{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -93,6 +96,13 @@ form.text_form{
     margin-bottom: 10px;
     width:100px;
 }
+.btn{
+    margin:auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    width:100px;
+}
+
 
 /*Container*/
 div.danger_container{
@@ -105,9 +115,6 @@ div.danger_container{
 /*Article*/
 article{
     font-family: Arial, Helvetica, sans-serif;
-}
-h3{
-    color: whitesmoke;
 }
 /*Footer*/
 footer{

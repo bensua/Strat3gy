@@ -31,7 +31,7 @@
             <input type="text" id="dname" name="DisplayName" placeholder="Put name in here">
 
             <label for="uploads">Uploads</label>
-            <textarea class="text_container"></textarea>
+            <textarea class="text_container" readonly="readonly" placeholder="Uploaded games will be in here"></textarea>
 
             <label for="pwd">Old Password</label>
             <input type="password" id="pwd" name="password" placeholder="Old Password">
@@ -41,13 +41,12 @@
             <button class="btn frmBtn" type="submit" value="Change" > Save Changes</button>
         </form>
         <!--Haven't designed these yet-->
-        <a  class="btn" href="register.html">New Account</a>
-        <a  class="btn" href="reset.html">Forget your password?</a>
+        <a class="btn frmBtn" href="register.html">New Account</a>
     </div>
     
     <div class="danger_container">
         <h3 style="color: black;">Warning !!! Danger zone </h3>
-        <button class="btn frmBtn" type="button">Delete</button>
+        <button class="btn" type="button">Delete Account</button>
     </div>
 </section>
 
