@@ -13,7 +13,10 @@ https://medium.com/@nmayurashok/file-and-folder-structure-for-web-development-8c
 -make the website more interactive
 
 *7/07*
--building database and connecting with local server
+-building basic database and connecting with local server *DONE* 
+
+*8/07*
+-create a PHPBranch for testing php files
 
 ******NOTES*******
 -Should use hashmap or dictionary to store and find things easier
