@@ -23,24 +23,20 @@
         <a class="btn" href="register.html">Register/Logout</a>
     </nav>
 
-<!--Testing purpose click to go to profile-->
-<a class="btn" href="profile.html">Click to go to profile--testing</a>
-
-
 <!--Login form-->
     <section >
         <h2>Login</h2>
         <div class="frm">
-            <form>
+            <form action="login.php" method="POST">
                 <label for="uname">Username</label>
                 <input type="text" id="uname" name="Username" placeholder="Username" required>
                 <br>
                 <label for="pwd">Password</label>
-                <input style="margin-left: 3.4px;"type="text" id="pwd" name="Password" placeholder="Password" required>
+                <input style="margin-left: 3.4px;"type="password" id="pwd" name="Password" placeholder="Password" required>
                 <br>
                 <button class="btn frmBtn"type="submit" value="Login"> Login</button>
             </form>
-            <!--Havent designed these yet-->
+            <!--Haven't designed these yet-->
             <a  class="btn" href="register.html">New Account</a>
             <a  class="btn" href="reset.html">Forget your password?</a>
         </div>
